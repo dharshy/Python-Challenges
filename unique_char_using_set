@@ -1,0 +1,13 @@
+#program to identify if all the characters in a given string are unique using set DS
+def unique_char(inp_str):
+    #convert the input string into a set Data Structure.Set cannot contain duplicates
+    input_str = set(inp_str)
+    #if length of the input is equal to the set equivalent of the input then it contains all unique characters
+    if len(inp_str) == len(input_str):
+        print("Contains only unique character")
+    else:
+        print("Does not contain Unique characters")
+        return
+
+unique_char("abcddd")
+unique_char("ab")
